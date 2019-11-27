@@ -85,16 +85,17 @@ body{
 	<div id="Cavalo" class="cavalo">🐎</div>
 </body>
 <script>
-	Color.addEventListener('change', (e) => {
+	const Cavalo = document.getElementById('Cavalo');
+	document.getElementById('Color').addEventListener('change', (e) => {
 		Cavalo.style.color = e.target.value;
 	});
-	Animation.addEventListener('change', (e) => {
+	document.getElementById('Animation').addEventListener('change', (e) => {
 		Cavalo.style.animation = e.target.checked ? 'Gallop 0.5s linear 0s infinite' : '';
 	});
-	Shadow.addEventListener('change', (e) => {
+	document.getElementById('Shadow').addEventListener('change', (e) => {
 		Cavalo.style.textShadow = e.target.checked ? '0 0 48px #000, 0 0 48px #000, 0 0 48px #000, 0 0 48px #000, 0 0 48px #000' : '';
 	});
-	Font.addEventListener('change', (e) => {
+	document.getElementById('Font').addEventListener('change', (e) => {
 		Cavalo.style.fontFamily = e.target.checked ? 'Muybridge' : '';
 	});
 </script>
